@@ -19,6 +19,8 @@ get '/login' do
     @error = "Wrong username"
     erb :index
   end
+else
+  @username =="Chvatal"
 end
 
 get '/name' do
