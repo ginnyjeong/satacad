@@ -8,9 +8,9 @@ end
 get '/login' do
   @username = params[:username]
   @password = params[:password]
-  if @username == 'jpoz'
-    if @password == 'taco'
-      redirect "/name?name=jpoz&state=Oregon"
+  if @username == 'Aleeo34152'
+    if @password == 'cookie'
+      redirect "/name?name=Alex&planet=Earth"
     else
       @error = "Wrong Password"
       erb :index
