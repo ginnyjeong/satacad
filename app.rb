@@ -11,6 +11,9 @@ get '/login' do
   if @username == 'Aleeo34152'
     if @password == 'iloveruchi'
       redirect "/name?name=Alex&planet=Earth"
+      if @username =='Chvatal'
+        if @password ==''
+          redirect 'http://www.youtube.com/watch?v=eDU0CTDMk2g'
     else
       @error = "Wrong Password"
       erb :index
@@ -18,15 +21,5 @@ get '/login' do
   else
     @error = "Wrong username"
     erb :index
-  end
-end
-
-get '/name' do
-  @name = (params[:name] || "Nobody").downcase
-  @state = params[:state]
-  if @username == "Chvatal"
-    redirect 'http://www.youtube.com/watch?v=oHg5SJYRHA0'
-  else
-    erb :name
   end
 end
