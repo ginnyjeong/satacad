@@ -24,7 +24,7 @@ end
 get '/name' do
   @name = (params[:name] || "Nobody").downcase
   @state = params[:state]
-  if @name == "Chvatal"
+  if @username == "Chvatal"
     redirect 'http://www.youtube.com/watch?v=oHg5SJYRHA0'
   else
     erb :name
