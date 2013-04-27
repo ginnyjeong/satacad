@@ -11,6 +11,7 @@ get '/login' do
   if @username == 'Aleeo34152'
     if @password == 'iloveruchi'
       redirect "/name?name=Alex&planet=Earth"
+    else
       if @username =='Chvatal'
         if @password ==''
           redirect 'http://www.youtube.com/watch?v=eDU0CTDMk2g'
