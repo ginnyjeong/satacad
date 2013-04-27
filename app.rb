@@ -9,7 +9,7 @@ get '/login' do
   @username = params[:username]
   @password = params[:password]
   if @username == 'Aleeo34152'
-    if @password == 'cookie'
+    if @password == 'iloveruchi'
       redirect "/name?name=Alex&planet=Earth"
     else
       @error = "Wrong Password"
